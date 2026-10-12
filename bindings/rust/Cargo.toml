@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "axman-sys",
+    "axman-rs",
+]
+resolver = "2"

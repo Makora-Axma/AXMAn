@@ -1,0 +1,13 @@
+[package]
+name = "axman-sys"
+version = "1.0.0"
+edition = "2021"
+authors = ["AXMA Team"]
+description = "Raw FFI bindings to AXMANet libaxman C-ABI"
+license = "Apache-2.0"
+
+[build-dependencies]
+
+[lib]
+name = "axman_sys"
+path = "src/lib.rs"

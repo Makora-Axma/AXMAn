@@ -1,0 +1,105 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg_axman" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#311042" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#0f071e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#07030f" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="purple_neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+
+    <linearGradient id="flow_match_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="port_accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <filter id="neural_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft_purple" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bg_axman)"/>
+  <rect width="1020" height="1020" x="2" y="2" rx="218" stroke="#3b0764" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Geometric Grid Backing -->
+  <g opacity="0.15" stroke="#a855f7" stroke-width="1.5">
+    <line x1="160" y1="200" x2="864" y2="200"/>
+    <line x1="160" y1="512" x2="864" y2="512"/>
+    <line x1="160" y1="824" x2="864" y2="824"/>
+    <line x1="260" y1="150" x2="260" y2="874"/>
+    <line x1="512" y1="150" x2="512" y2="874"/>
+    <line x1="764" y1="150" x2="764" y2="874"/>
+  </g>
+
+  <!-- Central Port-Hypergraph Body with Integrated 'N' Glyph -->
+  <!-- Left Column Node Rails (Inputs u0, u1, u2 with Ports) -->
+  <g transform="translate(512, 512)">
+    <!-- Hyperedge Tensor Membrane (Hexagonal Curved Envelope) -->
+    <polygon points="-240,-320 -80,-360 260,-160 320,240 120,360 -260,180" 
+      fill="#1e1035" stroke="url(#purple_neon)" stroke-width="5" opacity="0.65" filter="url(#neural_glow)"/>
+
+    <!-- Continuous Flow Matching Streamlines (Vector Field trajectories) -->
+    <path d="M-280,-240 C -120,-280 40,-180 240,-120" stroke="url(#flow_match_grad)" stroke-width="4" stroke-dasharray="8 6" fill="none" opacity="0.8"/>
+    <path d="M-280,0 C -80,-40 80,40 240,0" stroke="url(#flow_match_grad)" stroke-width="5" fill="none" opacity="0.9" filter="url(#soft_purple)"/>
+    <path d="M-280,240 C -120,200 40,260 240,160" stroke="url(#flow_match_grad)" stroke-width="4" stroke-dasharray="8 6" fill="none" opacity="0.8"/>
+
+    <!-- Stylized Futuristic 'N' / Hyperedge Morphism Core -->
+    <!-- Left Vertical Stem -->
+    <path d="M-200,-280 L-140,-280 L-140,280 L-200,280 Z" fill="url(#port_accent)" filter="url(#neural_glow)"/>
+    
+    <!-- Diagonal Morphism Flow Track (The 'N' diagonal) -->
+    <path d="M-140,-280 L-60,-280 L140,280 L60,280 Z" fill="url(#flow_match_grad)" filter="url(#neural_glow)"/>
+
+    <!-- Right Vertical Stem -->
+    <path d="M140,-280 L200,-280 L200,280 L140,280 Z" fill="url(#purple_neon)" filter="url(#neural_glow)"/>
+
+    <!-- Explicit Port Terminals (p0, p1, p2 on left, target port on right) -->
+    <!-- Input Port 0 -->
+    <circle cx="-280" cy="-220" r="28" fill="#0f172a" stroke="#00f5ff" stroke-width="4" filter="url(#soft_purple)"/>
+    <circle cx="-280" cy="-220" r="12" fill="#00f5ff"/>
+    <line x1="-252" y1="-220" x2="-200" y2="-220" stroke="#00f5ff" stroke-width="5"/>
+
+    <!-- Input Port 1 (Central) -->
+    <circle cx="-280" cy="0" r="28" fill="#0f172a" stroke="#00f5ff" stroke-width="4" filter="url(#soft_purple)"/>
+    <circle cx="-280" cy="0" r="12" fill="#00f5ff"/>
+    <line x1="-252" y1="0" x2="-200" y2="0" stroke="#00f5ff" stroke-width="5"/>
+
+    <!-- Input Port 2 -->
+    <circle cx="-280" cy="220" r="28" fill="#0f172a" stroke="#00f5ff" stroke-width="4" filter="url(#soft_purple)"/>
+    <circle cx="-280" cy="220" r="12" fill="#00f5ff"/>
+    <line x1="-252" y1="220" x2="-200" y2="220" stroke="#00f5ff" stroke-width="5"/>
+
+    <!-- Target Conclusion Node (Right) -->
+    <circle cx="280" cy="0" r="38" fill="#1e1035" stroke="#ec4899" stroke-width="5" filter="url(#neural_glow)"/>
+    <circle cx="280" cy="0" r="18" fill="#f43f5e"/>
+    <circle cx="280" cy="0" r="8" fill="#ffffff"/>
+    <line x1="200" y1="0" x2="242" y2="0" stroke="#ec4899" stroke-width="6"/>
+
+    <!-- Mathematical Accent Badges (Arity k and Port Notation) -->
+    <circle cx="0" cy="0" r="22" fill="#ffffff" filter="url(#neural_glow)"/>
+    <circle cx="0" cy="0" r="12" fill="#9333ea"/>
+  </g>
+</svg>

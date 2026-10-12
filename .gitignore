@@ -1,0 +1,148 @@
+# ==============================================================================
+# AXMANet (AXMAN) — Categorical Hypergraph Neural Architecture
+# Public Repository .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Compiled Binaries, Native Libraries & Objects
+# ------------------------------------------------------------------------------
+*.dll
+*.dll.a
+*.so
+*.so.*
+*.dylib
+*.lib
+*.a
+*.obj
+*.o
+*.exe
+*.pdb
+*.exp
+libaxman.dll
+libaxman.dll.a
+
+# ------------------------------------------------------------------------------
+# Build Systems (CMake / C++ / Native)
+# ------------------------------------------------------------------------------
+build/
+bin/
+out/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_*
+
+# ------------------------------------------------------------------------------
+# Rust Bindings (Cargo)
+# ------------------------------------------------------------------------------
+target/
+bindings/rust/target/
+bindings/rust/axman-rs/target/
+bindings/rust/axman-sys/target/
+**/*.rs.bk
+
+# ------------------------------------------------------------------------------
+# Java / Maven Bindings
+# ------------------------------------------------------------------------------
+bindings/java/target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# Python & Packaging
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.egg
+*.egg-info/
+dist/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+pip-wheel-metadata/
+
+# ------------------------------------------------------------------------------
+# Virtual Environments & Typing
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+ENV/
+env/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# ------------------------------------------------------------------------------
+# Testing, Coverage & Benchmarking Caches
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.benchmarks/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ------------------------------------------------------------------------------
+# Model Weights, Checkpoints & Large Data
+# ------------------------------------------------------------------------------
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+!tests/cross_language/golden_sample.bin
+
+# ------------------------------------------------------------------------------
+# Environments, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ------------------------------------------------------------------------------
+# Internal Planning & Roadmaps (Private)
+# ------------------------------------------------------------------------------
+ROADMAP.md
+ROADMAP*.md
+roadmap/
+
+# ------------------------------------------------------------------------------
+# IDE & Operating System Artifacts
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

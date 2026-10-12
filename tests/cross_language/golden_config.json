@@ -1,0 +1,7 @@
+{
+  "d_model": 64,
+  "num_layers": 2,
+  "num_heads": 4,
+  "num_actions": 16,
+  "in_features": 32
+}
